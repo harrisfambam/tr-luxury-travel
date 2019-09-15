@@ -12,7 +12,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { MailOutline, CloudDownload } from "@material-ui/icons";
+import { MailOutline, PeopleOutline } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -28,9 +28,20 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
+          href="#about-us"
+          color="transparent"
+          className={classes.navLink}
+          onClick={props.onDrawerToggle}
+        >
+          <PeopleOutline className={classes.icons} /> About Us
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
           href="#contact"
           color="transparent"
           className={classes.navLink}
+          onClick={props.onDrawerToggle}
         >
           <MailOutline className={classes.icons} /> Contact Us
         </Button>
