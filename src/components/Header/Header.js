@@ -46,6 +46,9 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      document.body
+        .getElementsByClassName("header-logo")[0]
+        .src=require("assets/img/logo.png")
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -53,6 +56,9 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      document.body
+        .getElementsByClassName("header-logo")[0]
+        .src=require("assets/img/logo-inverse.png")
     }
   };
   const rightLinks = <HeaderLinks onDrawerToggle={handleDrawerToggle}/>
@@ -74,7 +80,10 @@ export default function Header(props) {
               {leftLinks}
             </Hidden>
           ) : (
-            brandComponent
+            <div>
+            <img class="header-logo" width="100" src={require("assets/img/logo-inverse.png")} />
+            {brandComponent}
+            </div>
           )}
         </div>
         <Hidden smDown implementation="css">
