@@ -81,7 +81,7 @@ export default function Header(props) {
             </Hidden>
           ) : (
             <div>
-            <img class="header-logo" width="100" src={require("assets/img/logo-inverse.png")} />
+            <img class="header-logo" width="125" src={require("assets/img/logo-inverse.png")} />
             {brandComponent}
             </div>
           )}
