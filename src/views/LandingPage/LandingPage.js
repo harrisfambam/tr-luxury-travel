@@ -3,8 +3,8 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
+import Fab from '@material-ui/core/Fab';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 // core components
 import Header from "components/Header/Header.js";
@@ -22,6 +22,7 @@ import ImageGridSection from "./Sections/ImageGridSection.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
+import ScrollToTop from "components/ScrollToTop/ScrollToTop.js";
 
 const dashboardRoutes = [];
 
@@ -44,6 +45,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
+      <div id="back-to-top-anchor" />
       <Parallax filter image={require("assets/img/landing-bg.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -68,6 +70,11 @@ export default function LandingPage(props) {
           <WorkSection />
         </div>
       </div>
+      <ScrollToTop>
+        <Fab className={classes.fab} size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollToTop>
       <Footer />
     </div>
   );
