@@ -40,7 +40,7 @@ export default function TeamSection() {
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-              Danielle Dauphinee
+                Danielle Thurston
                 <br />
                 <small className={classes.smallTitle}>Co-Founder</small>
               </h4>
