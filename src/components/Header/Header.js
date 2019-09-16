@@ -88,7 +88,7 @@ export default function Header(props) {
             </Hidden>
           ) : (
             <div className={classes.logo} onClick={handleLogoClick}>
-            <img class="header-logo" width="80" src={require("assets/img/logo-inverse.png")} />
+            <img class="header-logo" width="100" src={require("assets/img/logo-inverse.png")} />
             {brandComponent}
             </div>
           )}
