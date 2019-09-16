@@ -20,6 +20,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import ImageGridSection from "./Sections/ImageGridSection.js";
 import ProductSection from "./Sections/ProductSection.js";
+import AboutUsSection from "./Sections/AboutUsSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 import ScrollToTop from "components/ScrollToTop/ScrollToTop.js";
@@ -66,6 +67,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <ProductSection />
           <ImageGridSection />
+          <AboutUsSection />
           <TeamSection />
           <WorkSection />
         </div>
