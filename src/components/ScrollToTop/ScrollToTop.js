@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Container from '@material-ui/core/Container';
 import Zoom from '@material-ui/core/Zoom';
-import {
-  primaryColor,
-} from "assets/jss/material-kit-react.js";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -17,7 +13,11 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ScrollTop(props) {
+ScrollToTop.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+export default function ScrollToTop(props) {
   const { children } = props;
   const classes = useStyles();
   

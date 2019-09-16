@@ -8,7 +8,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
@@ -88,7 +87,7 @@ export default function Header(props) {
             </Hidden>
           ) : (
             <div className={classes.logo} onClick={handleLogoClick}>
-            <img class="header-logo" width="100" src={require("assets/img/logo-inverse.png")} />
+            <img className="header-logo" width="70" src={require("assets/img/logo-inverse.png")} alt="TR Travel" />
             {brandComponent}
             </div>
           )}
