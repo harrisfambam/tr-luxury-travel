@@ -33,6 +33,13 @@ export default function Header(props) {
       }
     };
   });
+  const handleLogoClick = event => {
+    const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -69,7 +76,7 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title} href="/">{brand}</Button>;
+  const brandComponent = <span className={classes.title} >{brand}</span>;
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
@@ -80,7 +87,7 @@ export default function Header(props) {
               {leftLinks}
             </Hidden>
           ) : (
-            <div>
+            <div className={classes.logo} onClick={handleLogoClick}>
             <img class="header-logo" width="125" src={require("assets/img/logo-inverse.png")} />
             {brandComponent}
             </div>

@@ -51,6 +51,9 @@ const headerStyle = {
   flex: {
     flex: 1
   },
+  logo: {
+    cursor: "pointer"
+  },
   title: {
     ...defaultFont,
     lineHeight: "30px",
