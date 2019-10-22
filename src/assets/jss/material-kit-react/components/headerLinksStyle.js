@@ -21,6 +21,9 @@ const headerLinksStyle = theme => ({
     width: "auto",
     margin: "0",
     padding: "0",
+    "& a": {
+      color: "inherit"
+    },
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       "&:after": {

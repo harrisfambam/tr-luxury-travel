@@ -3,7 +3,7 @@ import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -27,26 +27,28 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Button
-          href="#about-us"
-          color="transparent"
-          className={classes.navLink}
-          onClick={props.onDrawerToggle}
-        >
-          <PeopleOutline className={classes.icons} /> About Us
-        </Button>
+        <Link to="/#about-us">
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            onClick={props.onDrawerToggle}
+          >
+            <PeopleOutline className={classes.icons} /> About Us
+          </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="#contact"
-          color="transparent"
-          className={classes.navLink}
-          onClick={props.onDrawerToggle}
-        >
-          <MailOutline className={classes.icons} /> Contact Us
-        </Button>
+        <Link to="/#contact">
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            onClick={props.onDrawerToggle}
+          >
+            <MailOutline className={classes.icons} /> Contact Us
+          </Button>
+        </Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -62,7 +64,7 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fab fa-twitter"} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"

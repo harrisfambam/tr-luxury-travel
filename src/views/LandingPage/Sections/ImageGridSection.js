@@ -15,10 +15,10 @@ export default function ImageGridSection(props) {
   return (
     <div className={classes.section}>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={12} md={8}>
-          <img width="100%" height="100%" src={require("assets/img/image-grid/img1.jpg")} alt="" />
+        <Grid item xs={12} sm={12} md={12}>
+          <img width="100%" height="100%" src={require("assets/img/image-grid/picture_2.png")} alt="" />
         </Grid>
-        <Grid item xs={12} sm={12} md={4}>
+        {/* <Grid item xs={12} sm={12} md={4}>
           <img width="100%" height="100%" src={require("assets/img/image-grid/img2.jpg")} alt=""/>
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
@@ -26,7 +26,7 @@ export default function ImageGridSection(props) {
         </Grid>
         <Grid item xs={12} sm={12} md={8}>
           <img width="100%" height="100%" src={require("assets/img/image-grid/img4.jpg")} alt=""/>
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
   )

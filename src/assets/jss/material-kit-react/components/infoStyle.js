@@ -62,6 +62,14 @@ const infoStyle = {
   iconVertical: {
     width: "61px",
     height: "61px"
+  },
+  items: {
+    // listStyleType: "none",
+    padding: "0",
+    // listStylePosition: "inside"
+  },
+  item: {
+    padding: "8px 0"
   }
 };
 

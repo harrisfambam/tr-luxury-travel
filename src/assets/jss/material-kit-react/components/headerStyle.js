@@ -52,7 +52,10 @@ const headerStyle = {
     flex: 1
   },
   logo: {
-    cursor: "pointer"
+    cursor: "pointer",
+    "& a": {
+      color: "inherit"
+    }
   },
   title: {
     ...defaultFont,

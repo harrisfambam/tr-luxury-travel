@@ -20,15 +20,10 @@ export default function AboutUsSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>About Us</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            Thurston Rivera Luxury Travel was founded in 2019 by two travel-obsessed best friends with over two decades of friendship who decided to build a business together.
           </h5>
         </GridItem>
       </GridContainer>
-
     </div>
   );
 }

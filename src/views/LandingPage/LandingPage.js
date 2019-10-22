@@ -40,7 +40,7 @@ export default function LandingPage(props) {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 300,
+          height: 190,
           color: "white"
         }}
         {...rest}
@@ -50,12 +50,9 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Vacation Starts With Us.</h1>
+              <h1 className={classes.title}>Luxury is the absence of inconvenience.</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                We design expertly curated itineraries for couples and families with a discerning eye for your tastes, desires, and vacation dreams.  We do the listening, planning and take care of everything throughout your travels. You go enjoy the world, we got you.
               </h4>
               <br />
             </GridItem>

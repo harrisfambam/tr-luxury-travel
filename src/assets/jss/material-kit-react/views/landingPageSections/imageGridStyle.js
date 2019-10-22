@@ -2,7 +2,7 @@ import { title } from "assets/jss/material-kit-react.js";
 
 const imageGridStyle = {
   section: {
-    padding: "140px 0 0",
+    padding: "100px 0 0",
     textAlign: "center"
   },
   title: {

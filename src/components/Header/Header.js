@@ -3,6 +3,8 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -54,7 +56,7 @@ export default function Header(props) {
         .classList.add(classes[changeColorOnScroll.color]);
       document.body
         .getElementsByClassName("header-logo")[0]
-        .src=require("assets/img/logo.png")
+        .src = require("assets/img/logo.png")
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -64,10 +66,10 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
       document.body
         .getElementsByClassName("header-logo")[0]
-        .src=require("assets/img/logo-inverse.png")
+        .src = require("assets/img/logo-inverse.png")
     }
   };
-  const rightLinks = <HeaderLinks onDrawerToggle={handleDrawerToggle}/>
+  const rightLinks = <HeaderLinks onDrawerToggle={handleDrawerToggle} />
   const { color, leftLinks, brand, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
@@ -86,11 +88,17 @@ export default function Header(props) {
               {leftLinks}
             </Hidden>
           ) : (
-            <div className={classes.logo} onClick={handleLogoClick}>
-            <img className="header-logo" width="70" src={require("assets/img/logo-inverse.png")} alt="TR Travel" />
-            {brandComponent}
-            </div>
-          )}
+              <div className={classes.logo} onClick={handleLogoClick}>
+                <Link to="/">
+                  {color == 'transparent' ? (
+                    <img className="header-logo" width="70" src={require("assets/img/logo-inverse.png")} alt="TR Travel" />
+                  ) : (
+                      <img className="header-logo" width="70" src={require("assets/img/logo.png")} alt="TR Travel" />
+                    )}
+                  {brandComponent}
+                </Link>
+              </div>
+            )}
         </div>
         <Hidden smDown implementation="css">
           {rightLinks}

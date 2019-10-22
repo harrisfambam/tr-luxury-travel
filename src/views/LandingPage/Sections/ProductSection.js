@@ -3,9 +3,18 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import Work from "@material-ui/icons/Work";
+import CheckBox from "@material-ui/icons/CheckBox";
+import Help from "@material-ui/icons/Help";
+import Search from "@material-ui/icons/Search";
+import Hearing from "@material-ui/icons/Hearing";
+import Schedule from "@material-ui/icons/Schedule";
+import Add from "@material-ui/icons/Add";
+import Loyalty from "@material-ui/icons/Loyalty";
+import BeachAccess from "@material-ui/icons/BeachAccess";
+import Flight from "@material-ui/icons/Flight";
+import FreeBreakfast from "@material-ui/icons/FreeBreakfast";
+import People from "@material-ui/icons/People";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -19,7 +28,7 @@ export default function ProductSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <GridContainer justify="center">
+      {/* <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Let{"'"}s talk product</h2>
           <h5 className={classes.description}>
@@ -30,33 +39,137 @@ export default function ProductSection() {
             more.
           </h5>
         </GridItem>
-      </GridContainer>
-      <div>
+      </GridContainer> */}
+      {/* <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
-              iconColor="info"
+              title="HOW WE WORK WITH YOU"
+              iconColor="gray"
+              vertical
+              items={[
+                "Listen and communicate",
+                "Work with your schedule",
+                "Take the time to discover what you need from your next journey",
+                "Plan, book and oversee your itinerary"
+              ]}
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="WHAT WE DO FOR YOU"
+              iconColor="gray"
+              vertical
+              items={[
+                "Provide exclusive amenities, upgrades and perks through our Virtuoso Partners",
+                "Enhanced Land, Sea & Air Experiences",
+                "Add value and peace of mind"
+              ]}            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="HOW WE CAN DO WHAT WE DO"
+              iconColor="gray"
+              vertical
+              items={[
+                "Access to over 1700 vetted luxury travel providers worldwide to ensure you are getting the best",
+                "Connections to the right people",
+                "Obsessed with travel and making people happy",
+              ]}            />
+          </GridItem>
+        </GridContainer>
+      </div> */}
+      <div>
+      <h2 className={classes.title}>How we work with you</h2>
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Listen and communicate"
+              description="We listen to your wishes, dreams and needs for your trip and work with you to provide the best trip possible. (I like it) Some people love planning and others don’t, or simply don’t have the time, and we are happy to collaborate as much or as little as you like."
+              icon={Hearing}
+              iconColor="gray"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
+              title="Work with your schedule"
+              description="Time is a luxury most don’t have (until it's time to vacay!) and we are happy to make your planning easier and more convenient for you. We work with your schedule to plan out your dream trip, be it on a Sunday morning or weekday evening.  We aren’t just 9-5ers so let us know what works best for you."
+              icon={Schedule}
+              iconColor="gray"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
+              title="Take the time to discover what you need from your next journey"
+              description="Are you eager to push your boundaries, get out and explore all that a destination has to offer and give your adventurous side some love? We are here to help you and your fellow travellers design what is needed for each specific trip."
+              icon={Search}
+              iconColor="gray"
+              vertical
+         />
+          </GridItem>
+        </GridContainer>
+      </div>
+      <div>
+      <h2 className={classes.title}>What we do for you</h2>
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Provide exclusive amenities, upgrades and perks through our Virtuoso Partners"
+              description="Complimentary upgrade, breakfast daily, food or spa credit, free wifi, early check in/late check out."
+              icon={FreeBreakfast}
+              iconColor="gray"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Enhanced Land, Sea & Air Experiences"
+              description="Exclusive excursions getting you to all your journey’s destinations seamlessly. Access to exclusive barges, river cruises, private yachts and impeccable cruise ships."
+              icon={Flight}
+              iconColor="gray"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Add value and peace of mind"
+              description="We utilize our Virtuoso network to provide you amazing perks and upgrades at no added cost to you. We are there to help steer you away from any mistakes that internet planning doesn’t warn you about or help you with."
+              icon={Add}
+              iconColor="gray"
+              vertical
+            />
+          </GridItem>
+        </GridContainer>
+      </div>
+      <div>
+      <h2 className={classes.title}>How we can do what we do</h2>
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Access to over 1700 vetted luxury travel providers worldwide"
+              description="Boots on the ground in your preferred destination provides for a truly authentic experience and first class service."
+              icon={BeachAccess}
+              iconColor="gray"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Connections to the right people"
+              description="We are proud members of Departure Lounge, an innovative and collaborative group of the top luxury advisors that utilize our shared experience, connections, and resources to make sure you are taken care of, wherever you travel."
+              icon={People}
+              iconColor="gray"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Obsessed with travel and making people happy"
+              description="We do everything it takes to be your most valuable personal shopper and planner, working as hard as we can, to make sure your valuable travel time and resources are spent in the exact way they should be."
+              icon={Loyalty}
+              iconColor="gray"
               vertical
             />
           </GridItem>
