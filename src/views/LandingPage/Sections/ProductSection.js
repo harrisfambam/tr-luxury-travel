@@ -86,7 +86,7 @@ export default function ProductSection() {
             <InfoArea
               title="Listen and communicate"
               description="We listen to your wishes, dreams and needs for your trip and work with you to provide the best trip possible. Some people love planning and others don’t, or simply don’t have the time, and we are happy to collaborate as much or as little as you like."
-              icon={Hearing}
+              // icon={Hearing}
               iconColor="gray"
               vertical
             />
@@ -95,7 +95,7 @@ export default function ProductSection() {
             <InfoArea
               title="Work with your schedule"
               description="Time is a luxury most don’t have (until it's time to vacay!) and we are happy to make your planning easier and more convenient for you. We work with your schedule to plan out your dream trip, be it on a Sunday morning or weekday evening.  We aren’t just 9-5ers so let us know what works best for you."
-              icon={Schedule}
+              // icon={Schedule}
               iconColor="gray"
               vertical
             />
@@ -104,7 +104,7 @@ export default function ProductSection() {
             <InfoArea
               title="Take the time to discover what you need from your next journey"
               description="Are you eager to push your boundaries, get out and explore all that a destination has to offer and give your adventurous side some love? We are here to help you and your fellow travellers design what is needed for each specific trip."
-              icon={Search}
+              // icon={Search}
               iconColor="gray"
               vertical
          />
@@ -116,9 +116,9 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Provide exclusive amenities, upgrades and perks through our Virtuoso Partners"
+              title="Access to exclusive amenities, upgrades and perks through our Virtuoso Partners"
               description="Complimentary upgrade, breakfast daily, food or spa credit, free wifi, early check in/late check out."
-              icon={FreeBreakfast}
+              // icon={FreeBreakfast}
               iconColor="gray"
               vertical
             />
@@ -127,7 +127,7 @@ export default function ProductSection() {
             <InfoArea
               title="Enhanced Land, Sea & Air Experiences"
               description="Exclusive excursions getting you to all your journey’s destinations seamlessly. Access to exclusive barges, river cruises, private yachts and impeccable cruise ships."
-              icon={Flight}
+              // icon={Flight}
               iconColor="gray"
               vertical
             />
@@ -136,7 +136,7 @@ export default function ProductSection() {
             <InfoArea
               title="Add value and peace of mind"
               description="We utilize our Virtuoso network to provide you amazing perks and upgrades at no added cost to you. We are there to help steer you away from any mistakes that internet planning doesn’t warn you about or help you with."
-              icon={Add}
+              // icon={Add}
               iconColor="gray"
               vertical
             />
@@ -150,7 +150,7 @@ export default function ProductSection() {
             <InfoArea
               title="Access to over 1700 vetted luxury travel providers worldwide"
               description="Boots on the ground in your preferred destination provides for a truly authentic experience and first class service."
-              icon={BeachAccess}
+              // icon={BeachAccess}
               iconColor="gray"
               vertical
             />
@@ -159,7 +159,7 @@ export default function ProductSection() {
             <InfoArea
               title="Connections to the right people"
               description="We are proud members of Departure Lounge, an innovative and collaborative group of the top luxury advisors that utilize our shared experience, connections, and resources to make sure you are taken care of, wherever you travel."
-              icon={People}
+              // icon={People}
               iconColor="gray"
               vertical
             />
@@ -168,7 +168,7 @@ export default function ProductSection() {
             <InfoArea
               title="Obsessed with travel and making people happy"
               description="We do everything it takes to be your most valuable personal shopper and planner, working as hard as we can, to make sure your valuable travel time and resources are spent in the exact way they should be."
-              icon={Loyalty}
+              // icon={Loyalty}
               iconColor="gray"
               vertical
             />
