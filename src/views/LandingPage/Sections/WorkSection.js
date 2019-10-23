@@ -43,12 +43,12 @@ export default function WorkSection() {
           <h2 className={classes.title}>Contact us</h2>
           {!submitted ? (
             <div>
-              <h4 className={classes.description}>
+              {/* <h4 className={classes.description}>
                 Divide details about your product or agency work into parts. Write a
                 few lines about each one and contact us about any further
                 collaboration. We will responde get back to you in a couple of
                 hours.
-            </h4>
+            </h4> */}
               <form action="https://formspree.io/xzbpdrze" method="POST" onSubmit={sendMessage}>
                 <GridContainer>
                   <GridItem xs={12} sm={12} md={12}>
