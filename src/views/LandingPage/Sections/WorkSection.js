@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import axios from "axios";
 
 // @material-ui/icons
 
@@ -16,23 +17,23 @@ const useStyles = makeStyles(styles);
 
 export default function WorkSection() {
   const classes = useStyles();
-  const [name, setName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [message, setMessage] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleMessageChange = (event) => {
-    setMessage(event.target.value);
-  }
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  }
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  }
-
-  const sendMessage = () => {
-    alert("create service to send this email!");
-    console.log(name, email, message);
+  const sendMessage = e => {
+    e.preventDefault();
+    const form = e.target;
+    axios({
+      method: "POST",
+      url: "https://formspree.io/xzbpdrze",
+      data: new FormData(form)
+    }).then(r => {
+      // handleServerResponse(true, "Thanks!", form);
+      setSubmitted(true);
+    })
+      .catch(r => {
+        console.log(r.response.data.error)
+        // handleServerResponse(false, r.response.data.error, form);
+      });
   }
 
   return (
@@ -40,64 +41,79 @@ export default function WorkSection() {
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Contact us</h2>
-          <h4 className={classes.description}>
-            Divide details about your product or agency work into parts. Write a
-            few lines about each one and contact us about any further
-            collaboration. We will responde get back to you in a couple of
-            hours.
-          </h4>
-          <form action="https://formspree.io/kirstilynnnorton@gmail.com" method="POST">
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Name"
-                  id="name"
-                  formControlProps={{
-                    fullWidth: true
-                  }}
-                  inputProps={{
-                    onChange: handleNameChange,
-                    name: "name"
-                  }}
-                />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Email"
-                  id="email"
-                  type="email"
-                  name="_replyto"
-                  formControlProps={{
-                    fullWidth: true
-                  }}
-                  inputProps={{
-                    onChange: handleEmailChange,
-                    type: "email",
-                    name: "_replyto"
-                  }}
-                />
-              </GridItem>
-              <CustomInput
-                labelText="Your Message" 
-                id="message"
-                formControlProps={{
-                  fullWidth: true,
-                  className: classes.textArea,
-                }}
-                inputProps={{
-                  multiline: true,
-                  rows: 5,
-                  onChange: handleMessageChange,
-                  name: "message"
-                }}
-              />
-              <GridContainer justify="center" className={classes.sendContainer}>
-                <GridItem xs={12} className={classes.textCenter}>
-                    <Button type="submit" color="primary">Send Message</Button>
-                </GridItem>
-              </GridContainer>
-            </GridContainer>
-          </form>
+          {!submitted ? (
+            <div>
+              <h4 className={classes.description}>
+                Divide details about your product or agency work into parts. Write a
+                few lines about each one and contact us about any further
+                collaboration. We will responde get back to you in a couple of
+                hours.
+            </h4>
+              <form action="https://formspree.io/xzbpdrze" method="POST" onSubmit={sendMessage}>
+                <GridContainer>
+                  <GridItem xs={12} sm={12} md={12}>
+                    <CustomInput
+                      labelText="Your Name"
+                      id="name"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        name: "name"
+                      }}
+                    />
+                  </GridItem>
+                  <GridItem xs={12} sm={12} md={6}>
+                    <CustomInput
+                      labelText="Your Email"
+                      id="email"
+                      type="email"
+                      name="_replyto"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        type: "email",
+                        name: "_replyto"
+                      }}
+                    />
+                  </GridItem>
+                  <GridItem xs={12} sm={12} md={6}>
+                    <CustomInput
+                      labelText="Your Phone Number"
+                      id="phone"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        name: "phone"
+                      }}
+                    />
+                  </GridItem>
+                  <CustomInput
+                    labelText="Your Message"
+                    id="message"
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.textArea,
+                    }}
+                    inputProps={{
+                      multiline: true,
+                      rows: 5,
+                      name: "message"
+                    }}
+                  />
+                  <GridContainer justify="center" className={classes.sendContainer}>
+                    <GridItem xs={12} className={classes.textCenter}>
+                      <Button type="submit" value="Send" color="primary">Send Message</Button>
+                    </GridItem>
+                  </GridContainer>
+                </GridContainer>
+              </form>
+            </div>
+          ) : (
+              <div className={classes.success}>Thank you for your inquiry, we will get back to you within 24 hours.</div>
+            )}
         </GridItem>
       </GridContainer>
     </div>

@@ -25,6 +25,10 @@ const workStyle = {
   },
   sendContainer: {
     width: "100%"
+  },
+  success: {
+    color: "green",
+    textAlign: "center"
   }
 };
 
