@@ -54,9 +54,9 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
-      document.body
-        .getElementsByClassName("header-logo")[0]
-        .src = require("assets/img/logo.png")
+      // document.body
+      //   .getElementsByClassName("header-logo")[0]
+      //   .src = require("assets/img/logo.png")
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -64,9 +64,9 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
-      document.body
-        .getElementsByClassName("header-logo")[0]
-        .src = require("assets/img/logo-inverse.png")
+      // document.body
+      //   .getElementsByClassName("header-logo")[0]
+      //   .src = require("assets/img/logo-inverse.png")
     }
   };
   const rightLinks = <HeaderLinks onDrawerToggle={handleDrawerToggle} />
@@ -90,11 +90,11 @@ export default function Header(props) {
           ) : (
               <div className={classes.logo} onClick={handleLogoClick}>
                 <Link to="/">
-                  {color == 'transparent' ? (
+                  {/* {color == 'transparent' ? (
                     <img className="header-logo" width="70" src={require("assets/img/logo-inverse.png")} alt="TR Travel" />
                   ) : (
                       <img className="header-logo" width="70" src={require("assets/img/logo.png")} alt="TR Travel" />
-                    )}
+                    )} */}
                   {brandComponent}
                 </Link>
               </div>
