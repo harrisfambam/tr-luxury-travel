@@ -46,7 +46,7 @@ export default function WorkSection() {
             collaboration. We will responde get back to you in a couple of
             hours.
           </h4>
-          <form>
+          <form action="https://formspree.io/kirstilynnnorton@gmail.com" method="POST">
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
@@ -56,7 +56,8 @@ export default function WorkSection() {
                     fullWidth: true
                   }}
                   inputProps={{
-                    onChange: handleNameChange
+                    onChange: handleNameChange,
+                    name: "name"
                   }}
                 />
               </GridItem>
@@ -64,11 +65,15 @@ export default function WorkSection() {
                 <CustomInput
                   labelText="Your Email"
                   id="email"
+                  type="email"
+                  name="_replyto"
                   formControlProps={{
                     fullWidth: true
                   }}
                   inputProps={{
-                    onChange: handleEmailChange
+                    onChange: handleEmailChange,
+                    type: "email",
+                    name: "_replyto"
                   }}
                 />
               </GridItem>
@@ -82,12 +87,13 @@ export default function WorkSection() {
                 inputProps={{
                   multiline: true,
                   rows: 5,
-                  onChange: handleMessageChange
+                  onChange: handleMessageChange,
+                  name: "message"
                 }}
               />
               <GridContainer justify="center" className={classes.sendContainer}>
                 <GridItem xs={12} className={classes.textCenter}>
-                  <Button color="primary" onClick={sendMessage}>Send Message</Button>
+                    <Button type="submit" color="primary">Send Message</Button>
                 </GridItem>
               </GridContainer>
             </GridContainer>
