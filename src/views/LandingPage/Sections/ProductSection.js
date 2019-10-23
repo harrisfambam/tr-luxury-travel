@@ -85,7 +85,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Listen and communicate"
-              description="We listen to your wishes, dreams and needs for your trip and work with you to provide the best trip possible. (I like it) Some people love planning and others don’t, or simply don’t have the time, and we are happy to collaborate as much or as little as you like."
+              description="We listen to your wishes, dreams and needs for your trip and work with you to provide the best trip possible. Some people love planning and others don’t, or simply don’t have the time, and we are happy to collaborate as much or as little as you like."
               icon={Hearing}
               iconColor="gray"
               vertical
