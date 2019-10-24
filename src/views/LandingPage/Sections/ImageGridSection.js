@@ -16,7 +16,7 @@ export default function ImageGridSection(props) {
     <div className={classes.section}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={12}>
-          <img width="100%" height="100%" src={require("assets/img/image-grid/picture_2.png")} alt="" />
+          <img width="100%" height="100%" src={require("assets/img/image-grid/picture_2-optimized.jpg")} alt="" />
         </Grid>
         {/* <Grid item xs={12} sm={12} md={4}>
           <img width="100%" height="100%" src={require("assets/img/image-grid/img2.jpg")} alt=""/>
