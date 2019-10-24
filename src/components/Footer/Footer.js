@@ -30,6 +30,11 @@ export default function Footer(props) {
           <div className={classes.item}>
             <div className={classes.list}>
               <div className={classes.inlineBlock}>
+                <span className={classes.block}>
+                  Affiliates of Departure Lounge
+                </span>
+              </div>
+              <div className={classes.inlineBlock}>
                 <Link className={classes.block} to="terms-and-conditions">
                   Terms & Conditions
                 </Link>
