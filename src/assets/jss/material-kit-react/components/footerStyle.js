@@ -28,7 +28,7 @@ const footerStyle = {
     justifyContent: "space-between",
     alignItems: "flex-end",
     flexWrap: "wrap",
-    '@media screen and (max-width: 500px)': {
+    '@media screen and (max-width: 497px)': {
       justifyContent: "center",
     }
   },
@@ -58,7 +58,7 @@ const footerStyle = {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
-    '@media screen and (max-width: 500px)': {
+    '@media screen and (max-width: 497px)': {
       justifyContent: "center",
       alignItems: "center"
     }
