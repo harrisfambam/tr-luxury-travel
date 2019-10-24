@@ -64,7 +64,7 @@ const card = {
 };
 
 const defaultFont = {
-  fontFamily: '"Lato", "Helvetica", "Arial", sans-serif',
+  fontFamily: '"Cantarell", "Helvetica", "Arial", sans-serif',
   fontWeight: "300",
   lineHeight: "1.5em"
 };
@@ -160,7 +160,8 @@ const title = {
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "bolder",
-  fontFamily: `"Lato", "Times New Roman", serif`
+  textTransform: "uppercase",
+  fontFamily: `"Cantarell", "Times New Roman", serif`
 };
 
 const cardTitle = {

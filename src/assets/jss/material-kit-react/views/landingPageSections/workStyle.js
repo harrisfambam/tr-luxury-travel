@@ -10,7 +10,8 @@ const workStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
-    textAlign: "center"
+    textAlign: "center",
+    fontFamily: `"Cinzel", "Times New Roman", serif`
   },
   description: {
     color: "#999",

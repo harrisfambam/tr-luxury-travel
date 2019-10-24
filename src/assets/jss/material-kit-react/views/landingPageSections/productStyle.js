@@ -10,7 +10,8 @@ const productStyle = {
     marginBottom: "2rem",
     marginTop: "2rem",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
+    fontFamily: `"Cinzel", "Times New Roman", serif`
   },
   description: {
     color: "#999"
