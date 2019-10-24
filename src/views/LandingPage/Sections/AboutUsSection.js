@@ -20,7 +20,7 @@ export default function AboutUsSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>About Us</h2>
           <h5 className={classes.description}>
-            Thurston Rivera Luxury Travel was founded in 2019 by two travel-obsessed best friends with over two decades of friendship who decided to build a business together.
+          Thurston Rivera Luxury Travel was founded in 2019 by two travel-obsessed best friends with over two decades of building businesses and their repertoire of travel together who decided to go at it on their own.
           </h5>
         </GridItem>
       </GridContainer>

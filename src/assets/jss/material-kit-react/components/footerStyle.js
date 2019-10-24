@@ -3,7 +3,7 @@ import { container, primaryColor } from "assets/jss/material-kit-react.js";
 const footerStyle = {
   block: {
     color: "inherit",
-    padding: "0.9375rem",
+    padding: "0 0.9375rem",
     fontWeight: "500",
     fontSize: "12px",
     textTransform: "uppercase",
@@ -12,14 +12,9 @@ const footerStyle = {
     position: "relative",
     display: "block"
   },
-  left: {
-    float: "left!important",
-    display: "block"
-  },
-  right: {
-    padding: "15px 0",
-    margin: "0",
-    float: "right!important"
+  copyright: {
+    fontSize: ".625rem",
+    marginTop: "20px"
   },
   footer: {
     padding: "0.9375rem 0",
@@ -27,6 +22,23 @@ const footerStyle = {
     display: "flex",
     zIndex: "2",
     position: "relative"
+  },
+  footerLinksContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-end",
+    flexWrap: "wrap",
+    '@media screen and (max-width: 415px)': {
+      justifyContent: "center",
+    }
+  },
+  item: {
+    marginTop: "20px"
+  },
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center"
   },
   a: {
     color: primaryColor,
@@ -42,7 +54,14 @@ const footerStyle = {
   list: {
     marginBottom: "0",
     padding: "0",
-    marginTop: "0"
+    marginTop: "0",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    '@media screen and (max-width: 415px)': {
+      justifyContent: "center",
+      alignItems: "center"
+    }
   },
   inlineBlock: {
     display: "inline-block",

@@ -117,7 +117,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Access to exclusive amenities, upgrades and perks through our Virtuoso Partners"
-              description="Complimentary upgrade, breakfast daily, food or spa credit, free wifi, early check in/late check out."
+              description="Complimentary upgrades, breakfast daily, food or spa credit, free wifi, early check-in/late check out are a sampling of the benefits we can provide you through hotel partnerships."
               // icon={FreeBreakfast}
               iconColor="gray"
               vertical
@@ -126,7 +126,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Enhanced Land, Sea & Air Experiences"
-              description="Exclusive excursions getting you to all your journey’s destinations seamlessly. Access to exclusive barges, river cruises, private yachts and impeccable cruise ships."
+              description="Exclusive excursions, immersive cultural experiences, backstage access to historical destinations, and arrangements for getting you to and from your destinations seamlessly."
               // icon={Flight}
               iconColor="gray"
               vertical
@@ -167,7 +167,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Obsessed with travel and making people happy"
-              description="We do everything it takes to be your most valuable personal shopper and planner, working as hard as we can, to make sure your valuable travel time and resources are spent in the exact way they should be."
+              description="We do everything it takes to be your most trusted personal shopper and planner, working as hard as we can to make sure your valuable travel time and resources are spent in the exact way they should be."
               // icon={Loyalty}
               iconColor="gray"
               vertical
