@@ -16,8 +16,8 @@ import CardFooter from "components/Card/CardFooter.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/danielle.jpg";
-import team2 from "assets/img/faces/trisha.jpg";
+import team1 from "assets/img/faces/danielle-optimized.jpg";
+import team2 from "assets/img/faces/trisha-optimized.jpg";
 
 const useStyles = makeStyles(styles);
 
