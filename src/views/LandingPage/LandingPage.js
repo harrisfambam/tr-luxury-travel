@@ -32,7 +32,7 @@ export default function LandingPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Luxury is the absence of inconvenience.</h1>
               <h4 className={classes.subTitle}>
-                We design expertly curated itineraries for couples and families with a discerning eye for your tastes, desires, and vacation dreams.  We do the listening, planning and take care of everything throughout your travels. You go enjoy the world, we got you.
+                We design expertly curated itineraries for couples and families with a discerning eye for your tastes, desires, and vacation dreams.  We do the listening, planning and take care of everything throughout your travels. You go enjoy the world, we've got you.
               </h4>
               <br />
             </GridItem>
