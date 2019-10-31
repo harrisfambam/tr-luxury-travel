@@ -47,6 +47,8 @@ export default function Header(props) {
   const headerColorChange = () => {
     const { color, changeColorOnScroll } = props;
     const windowsScrollTop = window.pageYOffset;
+    const logo = document.body
+        .getElementsByClassName("header-logo")[0];
     if (windowsScrollTop > changeColorOnScroll.height) {
       document.body
         .getElementsByTagName("header")[0]
@@ -54,9 +56,8 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
-      // document.body
-      //   .getElementsByClassName("header-logo")[0]
-      //   .src = require("assets/img/logo.png")
+      logo.src = require("assets/img/tr-logo-black-optimized.png");
+      logo.style.width = "175px";
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -64,9 +65,8 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
-      // document.body
-      //   .getElementsByClassName("header-logo")[0]
-      //   .src = require("assets/img/logo-inverse.png")
+      logo.src = require("assets/img/tr-logo-white-optimized.png");
+      logo.style.width = "280px";
     }
   };
   const rightLinks = <HeaderLinks onDrawerToggle={handleDrawerToggle} />
@@ -77,7 +77,18 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <span className={classes.title} >{brand}</span>;
+  // const brandComponent = <span className={classes.title} >{brand}</span>;
+  const brandComponent = (
+    <img 
+      className="header-logo"
+      src={require("assets/img/tr-logo-white-optimized.png")}
+      alt="TR Travel"
+      style={{
+        width: "280px",
+        transition: "0.25s"
+      }}
+    />
+  );
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
@@ -93,7 +104,7 @@ export default function Header(props) {
                   {/* {color == 'transparent' ? (
                     <img className="header-logo" width="70" src={require("assets/img/logo-inverse.png")} alt="TR Travel" />
                   ) : (
-                      <img className="header-logo" width="70" src={require("assets/img/logo.png")} alt="TR Travel" />
+                    <img className="header-logo" width="70" src={require("assets/img/logo.png")} alt="TR Travel" />
                     )} */}
                   {brandComponent}
                 </Link>

@@ -3,15 +3,11 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import Fab from '@material-ui/core/Fab';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 // core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
+import Layout from "components/Layout/Layout.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
@@ -22,9 +18,6 @@ import ProductSection from "./Sections/ProductSection.js";
 import AboutUsSection from "./Sections/AboutUsSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
-import ScrollToTop from "components/ScrollToTop/ScrollToTop.js";
-
-const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
@@ -32,20 +25,7 @@ export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div>
-      <Header
-        color="transparent"
-        routes={dashboardRoutes}
-        brand="TR Luxury Travel"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 190,
-          color: "white"
-        }}
-        {...rest}
-      />
-      <div id="back-to-top-anchor" />
+    <Layout {...rest}>
       <Parallax filter image={require("assets/img/landing-bg-optimized.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -68,12 +48,6 @@ export default function LandingPage(props) {
           <WorkSection />
         </div>
       </div>
-      <ScrollToTop>
-        <Fab className={classes.fab} size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollToTop>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
