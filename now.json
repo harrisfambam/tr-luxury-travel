@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "tr-luxury-travel",
+  "scope": "harris",
+  "alias": [
+      "trluxurytravel.com",
+      "www.trluxurytravel.com"
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
