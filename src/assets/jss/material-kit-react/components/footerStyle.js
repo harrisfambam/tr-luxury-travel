@@ -28,17 +28,12 @@ const footerStyle = {
     justifyContent: "space-between",
     alignItems: "flex-end",
     flexWrap: "wrap",
-    '@media screen and (max-width: 496px)': {
-      justifyContent: "center",
+    "@media screen and (max-width: 496px)": {
+      justifyContent: "center"
     }
   },
   item: {
     marginTop: "20px"
-  },
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center"
   },
   a: {
     color: primaryColor,
@@ -58,7 +53,7 @@ const footerStyle = {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
-    '@media screen and (max-width: 496px)': {
+    "@media screen and (max-width: 496px)": {
       justifyContent: "center",
       alignItems: "center"
     }

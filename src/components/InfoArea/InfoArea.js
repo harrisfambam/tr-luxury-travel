@@ -24,16 +24,22 @@ export default function InfoArea(props) {
   });
   return (
     <div className={classes.infoArea}>
-      {props.icon && <div className={iconWrapper}>
-        <props.icon className={iconClasses} />
-      </div>}
+      {props.icon && (
+        <div className={iconWrapper}>
+          <props.icon className={iconClasses} />
+        </div>
+      )}
       <div className={classes.descriptionWrapper}>
         <h4 className={classes.title}>{title}</h4>
-        {items && <ul className={classes.items}>
-          {items.map((item, index) =>
-            <li className={classes.item} key={index}>{item}</li>
-          )}
-        </ul>}
+        {items && (
+          <ul className={classes.items}>
+            {items.map((item, index) => (
+              <li className={classes.item} key={index}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
         {description && <p className={classes.description}>{description}</p>}
       </div>
     </div>
@@ -45,7 +51,8 @@ InfoArea.defaultProps = {
 };
 
 InfoArea.propTypes = {
-  icon: PropTypes.object.isRequired,
+  icon: PropTypes.object,
+  items: PropTypes.array,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   iconColor: PropTypes.oneOf([
