@@ -2,19 +2,6 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-import Work from "@material-ui/icons/Work";
-import CheckBox from "@material-ui/icons/CheckBox";
-import Help from "@material-ui/icons/Help";
-import Search from "@material-ui/icons/Search";
-import Hearing from "@material-ui/icons/Hearing";
-import Schedule from "@material-ui/icons/Schedule";
-import Add from "@material-ui/icons/Add";
-import Loyalty from "@material-ui/icons/Loyalty";
-import BeachAccess from "@material-ui/icons/BeachAccess";
-import Flight from "@material-ui/icons/Flight";
-import FreeBreakfast from "@material-ui/icons/FreeBreakfast";
-import People from "@material-ui/icons/People";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -80,7 +67,7 @@ export default function ProductSection() {
         </GridContainer>
       </div> */}
       <div>
-      <h2 className={classes.title}>How we work with you</h2>
+        <h2 className={classes.title}>How we work with you</h2>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
@@ -107,12 +94,12 @@ export default function ProductSection() {
               // icon={Search}
               iconColor="gray"
               vertical
-         />
+            />
           </GridItem>
         </GridContainer>
       </div>
       <div>
-      <h2 className={classes.title}>What we do for you</h2>
+        <h2 className={classes.title}>What we do for you</h2>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
@@ -144,7 +131,7 @@ export default function ProductSection() {
         </GridContainer>
       </div>
       <div>
-      <h2 className={classes.title}>How we can do what we do</h2>
+        <h2 className={classes.title}>How we can do what we do</h2>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
