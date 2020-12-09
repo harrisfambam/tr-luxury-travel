@@ -39,6 +39,12 @@ const termsAndConditionsStyle = {
   },
   bold: {
     fontWeight: "bold"
+  },
+  underline: {
+    textDecoration: "underline"
+  },
+  listNoStyle: {
+    listStyle: "none"
   }
 };
 
