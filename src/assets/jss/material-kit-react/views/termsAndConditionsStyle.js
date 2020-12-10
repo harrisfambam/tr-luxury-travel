@@ -45,6 +45,9 @@ const termsAndConditionsStyle = {
   },
   listNoStyle: {
     listStyle: "none"
+  },
+  marginLeftLarge: {
+    marginLeft: "35px"
   }
 };
 

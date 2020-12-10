@@ -39,6 +39,34 @@ export default function TermsAndConditions(props) {
               conditions of use, travel, and booking as contained in the
               following paragraphs. Please contact us if you have any questions.
             </p>
+            <h5 className={classes.bold}>Overview</h5>
+            <h6 className={classes.marginLeftLarge}>
+              WHO WE ARE AND WHAT THESE TERMS COVER
+            </h6>
+            <h5 className={classes.bold}>Your Responsibility</h5>
+            <h6 className={classes.marginLeftLarge}>YOUR ACCEPTANCE OF THESE T&Cs</h6>
+            <h5 className={classes.bold}>Changes to T&Cs</h5>
+            <h6 className={classes.marginLeftLarge}>BECOME FAMILIAR</h6>
+            <h5 className={classes.bold}>Other Terms That Apply</h5>
+            <h6 className={classes.marginLeftLarge}>COVID-19 RELEASE</h6>
+            <h5 className={classes.bold}>Scope</h5>
+            <h6 className={classes.marginLeftLarge}>THIRD PARTY TRAVEL PROVIDERS AND PRODUCTS</h6>
+            <h5 className={classes.bold}>Planning and Booking Services</h5>
+            <h6 className={classes.marginLeftLarge}>PROCESSES AND PAYMENTS</h6>
+            <h5 className={classes.bold}>Destination Risks and Requirements</h5>
+            <h6 className={classes.marginLeftLarge}>ENTRY/EXIT</h6>
+            <h5 className={classes.bold}>Change and Cancellation Policy</h5>
+            <h5 className={classes.bold}>Force Majeure</h5>
+            <h6 className={classes.marginLeftLarge}>UNFORESEEABLE CIRCUMSTANCES</h6>
+            <h5 className={classes.bold}>Trip Protection Insurance</h5>
+            <h6 className={classes.marginLeftLarge}>STRONGLY RECOMMENDED</h6>
+            <h5 className={classes.bold}>Liability</h5>
+            <h6 className={classes.marginLeftLarge}>RELEASE WAIVER</h6>
+            <h5 className={classes.bold}>Indemnification</h5>
+            <h6 className={classes.marginLeftLarge}>RELEASE WAIVER</h6>
+            <h5 className={classes.bold}>Governing Law</h5>
+            <h6 className={classes.marginLeftLarge}>SUBMISSION TO JURISDICTION</h6>
+            <h5 className={classes.bold}>Entire Agreement & Severability</h5>
             <h4>
               Overview
               <br /> <small>WHO WE ARE AND WHAT THESE TERMS COVER</small>
@@ -216,23 +244,24 @@ export default function TermsAndConditions(props) {
             <ul className={classes.listNoStyle}>
               <li>
                 <p>
-                PROPOSED ITINERARY: After clarifying your trip details, AVA Wine
-                Adventures will provide a proposed itinerary subject to the
-                determined planning fee.
+                  PROPOSED ITINERARY: After clarifying your trip details, AVA
+                  Wine Adventures will provide a proposed itinerary subject to
+                  the determined planning fee.
                 </p>
               </li>
               <li>
                 <p>
-                FIRST DRAFT CHANGES: We will work with you on any first draft
-                changes if required.
+                  FIRST DRAFT CHANGES: We will work with you on any first draft
+                  changes if required.
                 </p>
               </li>
               <li>
                 <p>
-                FINAL ITINERARY: After any changes are made, you will then
-                receive your final itinerary with an invoice and other important
-                travel information. This invoice is subject to change until you
-                receive confirmation that your travel is booked.
+                  FINAL ITINERARY: After any changes are made, you will then
+                  receive your final itinerary with an invoice and other
+                  important travel information. This invoice is subject to
+                  change until you receive confirmation that your travel is
+                  booked.
                 </p>
               </li>
             </ul>
@@ -464,8 +493,10 @@ export default function TermsAndConditions(props) {
                   medical advice in relation to your trip. Inoculation
                   requirements can be found on the Center for Disease Control
                   website at https://www.cdc.gov/.
-                  <ul>
-                    <li>
+                </p>
+                <ul>
+                  <li>
+                    <p>
                       Disinsection: Most countries reserve the right to
                       disinsect aircraft if there is a perceived threat to
                       public health, agriculture, or environment. While this is
@@ -477,9 +508,9 @@ export default function TermsAndConditions(props) {
                       passengers are not on board. For more information you can
                       visit the U.S. Department of transportation website at:
                       https://www.transportation.gov/airconsumer/spray.
-                    </li>
-                  </ul>
-                </p>
+                    </p>
+                  </li>
+                </ul>
               </li>
             </ul>
             <h4>Change and Cancellation Policy</h4>
