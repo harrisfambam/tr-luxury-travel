@@ -26,14 +26,11 @@ const footerStyle = {
   footerLinksContainer: {
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "flex-end",
+    alignItems: "center",
     flexWrap: "wrap",
     "@media screen and (max-width: 496px)": {
       justifyContent: "center"
     }
-  },
-  item: {
-    marginTop: "20px"
   },
   a: {
     color: primaryColor,
