@@ -17,47 +17,44 @@ export default function Footer(props) {
   const { whiteFont } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   const aClasses = classNames({
     [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.footerLinksContainer}>
-          <div className={classes.item}>
-            <div className={classes.list}>
-              <div className={classes.inlineBlock}>
-                <span className={classes.block}>
-                  Affiliates of Departure Lounge
-                </span>
-              </div>
-              <div className={classes.inlineBlock}>
-                <Link className={classes.block} to="terms-and-conditions">
-                  Terms & Conditions
-                </Link>
-              </div>
-              <div className={classes.inlineBlock}>
-                <Link className={classes.block} to="privacy-policy">
-                  Privacy Policy
-                </Link>
-              </div>
+          <div className={classes.list}>
+            <div className={classes.inlineBlock}>
+              <span className={classes.block}>
+                Affiliates of Departure Lounge
+              </span>
+            </div>
+            <div className={classes.inlineBlock}>
+              <Link className={classes.block} to="terms-and-conditions">
+                Terms & Conditions
+              </Link>
+            </div>
+            <div className={classes.inlineBlock}>
+              <Link className={classes.block} to="privacy-policy">
+                Privacy Policy
+              </Link>
             </div>
           </div>
-          <div className={classes.item}>
-            <img src={virtuoso} alt="Virtuoso Member" height="76" width="200" />
-          </div>
-         </div>
-         <div className={classes.copyright}>
-            &copy; {1900 + new Date().getYear()} Thurston Rivera Luxury Travel LLC CST#2141493-70 | All Rights Reserved
-          </div>
+          <img src={virtuoso} alt="Virtuoso Member" />
+        </div>
+        <div className={classes.copyright}>
+          &copy; {1900 + new Date().getYear()} Thurston Rivera Luxury Travel LLC
+          CST#2141493-70 | All Rights Reserved
+        </div>
       </div>
     </footer>
   );
 }
 
 Footer.propTypes = {
-  whiteFont: PropTypes.bool
+  whiteFont: PropTypes.bool,
 };
